@@ -48,14 +48,80 @@ header {
 	background-position: top center;
 	min-height: 644px;
 	position: relative;
+	font-family: "BebasBold";
+}
+
+header a {
+	color: #ffffff;
 }
 
 .top_line {
 	min-height: 97px;
 	-webkit-box-shadow: rgba(255, 255, 255, .3) 0 0 0 1px;
 	box-shadow: rgba(255, 255, 255, .3) 0 0 0 1px;
-	position: absolute;
-	top: 0;
 	width: 100%;
 	background-color: rgba(0, 0, 0, .70);
+	padding: 23px 0;
+}
+
+.top_line a {
+	font-size: 21px;
+	border-bottom: #fff dashed 1px;
+}
+
+.top_line a:hover {
+	border-bottom: transparent dashed 1px;
+	-webkit-transition: all .25s;
+	-o-transition: all .25s;
+	transition: all .25s;
+}
+
+.top_addr {
+    padding-left: 50px;
+    background-image: url(../img/top-map.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    font-family: "BebasBold";
+    line-height: 26px;
+}
+
+.top_addr strong {
+    color: #B43327;
+    display: block;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 32px;
+}
+
+.top_line .logo {
+	border-bottom: none;
+	position: absolute;
+	margin-top: -22px;
+}
+
+.top_line .logo:hover {
+	border-bottom: none;
+}
+
+.logo_wrap {
+	position: relative;
+	width: 240px;
+	margin: auto;
+}
+
+.ta_right {
+	background-image: none;
+	padding-left: 0;
+	text-align: right;
+}
+
+.ta_right span {
+	color: #fff;
+}
+
+header h1 {
+    text-align: center;
+    color: #fff;
+    margin-top: 62px;
+    font-size: 40px;
 }
