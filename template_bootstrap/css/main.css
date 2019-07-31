@@ -311,11 +311,17 @@ section h2 {
 
 .mc_wrap {
 	text-align: center;
+	padding: 0;
+}
+
+.mc_item_wrap:nth-child(1) {
+	margin-left: 0;
 }
 
 .mc_item {
 	border: #353535 1px solid;
 	border-radius: 2px;
+	cursor: pointer;
 }
 
 .mc_item a {
@@ -325,24 +331,20 @@ section h2 {
 	font-family: "BebasRegular";
 }
 
-.mc_item h4 {
-	font-weight: 500;
-}
-
 .mc_item_wrap {
 	margin-left: 30px;
-	width: 156px;
+	width: 161px;
 	display: inline-block;
 }
 
 .mc_item span {
-	display: block;
-	width: 137px;
-	height: 95px;
-	background-image: url(../img/cats_iconset.png);
-	background-repeat: no-repeat;
-	background-position: 17px 0;
-	margin: 10px auto;
+    display: block;
+    width: 137px;
+    height: 95px;
+    background-image: url(../img/cats_iconset.png);
+    background-repeat: no-repeat;
+    background-position: 17px 0;
+    margin: 10px auto -4px;
 }
 
 .mc_item_wrap:nth-child(2) a span {
@@ -363,4 +365,34 @@ section h2 {
 
 .mc_item_wrap:nth-child(6) a span {
 	background-position: -695px 0px;
+}
+
+.mc_item h4 {
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+
+.mc_item a:hover h4,
+.mc_item_wrap.active h4 {
+	text-decoration: underline;
+}
+
+.mc_item_wrap.active,
+.mc_item_wrap:hover {
+	background-color: #2e2e2e;
+}
+
+.mc_toggle {
+    background-color: #262626;
+    height: 25px;
+    background-image: url(../img/mc_arr.png);
+    background-repeat: no-repeat;
+    background-position: 73px 9px;
+}
+
+.mc_item_wrap.active .mc_toggle,
+.mc_item_wrap:hover .mc_toggle {
+	background-color: #383838;
+	background-position: -117px 9px;
 }
