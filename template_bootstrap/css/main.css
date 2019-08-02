@@ -225,12 +225,16 @@ header .button {
 	background-position: 25px -431px;	
 }
 
+.warranty-wrap {
+	display: flex;
+	justify-content: flex-end;
+}
+
 .warranty {
     display: flex;
     color: #ffffff;
     border: 3px solid #fff;
     border-radius: 3px;
-    margin-left: 14px;
     height: 43px;
     width: 151px;
     position: relative;
@@ -582,5 +586,5 @@ footer .mnu_item a:hover {
 footer .counter img {
 	width: 90px;
 	height: 31px;
-	margin-left: 100px;
+	float: right;
 }
