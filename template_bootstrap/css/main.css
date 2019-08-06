@@ -70,7 +70,7 @@ header a {
 }
 
 .top_line a:hover {
-	border-bottom: transparent dashed 1px;
+	border -bottom: transparent dashed 1px;
 	-webkit-transition: all .25s;
 	-o-transition: all .25s;
 	transition: all .25s;
@@ -179,16 +179,15 @@ header .button {
 	text-transform: uppercase;
 }
 
-.top_mnu ul {
+.top_mnu .top_mnu-list__main {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 	display: flex;
 	flex-direction: row;
-
 }
 
-.top_mnu a {
+.top_mnu .top_mnu-list__main a {
 	color: #fff;
 	font-size: 20px;
 	padding: 0px 26px 0 54px;
@@ -200,28 +199,28 @@ header .button {
 	background-position: 20px 18px;
 }
 
-.top_mnu li:active a,
-.top_mnu li:hover a {
+.top_mnu .top_mnu-list__main li:active a,
+.top_mnu .top_mnu-list__main li:hover a {
 	background-color: #050505;
 }
 
-.top_mnu li:nth-child(2) a {
+.top_mnu .top_mnu-list__main li:nth-child(2) a {
 	background-position: 20px -87px;
 }
 
-.top_mnu li:nth-child(3) a {
+.top_mnu .top_mnu-list__main li:nth-child(3) a {
 	background-position: 27px -185px;
 }
 
-.top_mnu li:nth-child(4) a {
+.top_mnu .top_mnu-list__main li:nth-child(4) a {
 	background-position: 20px -288px;
 }
 
-.top_mnu li:nth-child(5) a {
+.top_mnu .top_mnu-list__main li:nth-child(5) a {
 	background-position: 20px -363px;
 }
 
-.top_mnu li:nth-child(6) a {
+.top_mnu .top_mnu-list__main li:nth-child(6) a {
 	background-position: 25px -431px;	
 }
 
@@ -265,6 +264,10 @@ header .button {
     margin-left: 9px;
     margin-top: 3px;
     line-height: 15px;
+}
+
+.top_mnu-btn {
+	display: none;
 }
 
 .main_cats {
@@ -520,6 +523,11 @@ article h2 {
 .s_bottom p {
 	color: #0D0D0D;
 	font-weight: 600;
+}
+
+.s_bottom .sb_btn {
+	display: flex;
+	justify-content: flex-end;
 }
 
 .s_bottom .sb_header {

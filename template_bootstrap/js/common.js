@@ -17,6 +17,12 @@ $(document).ready(function() {
 		}
 	});
 
+	$('.top_mnu-btn').on('click', function(e) {
+		e.preventDefault();
+		$(this).toggleClass('top_mnu-btn_active');
+		$('.top_mnu-list__main').toggleClass('top_mnu-list__main_active');
+	});
+
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function() {
 		ga("send", "event", "goal", "goal");
