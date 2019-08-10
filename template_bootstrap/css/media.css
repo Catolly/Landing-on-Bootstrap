@@ -208,9 +208,7 @@
 
 	footer .copyright,
 	footer .mnu_item a {
-		font-family: "BebasBold";
 		font-size: 18px;
-		color: #fff;
 	}
 
 	footer .counter img {
@@ -251,6 +249,10 @@
    	margin-bottom: 15px;
    }
 
+   .mc_item_wrap:nth-child(3) {
+   	
+   }
+
    .mc_item_wrap {
    	margin-left: 15px;
    	width: 161px;
@@ -258,8 +260,8 @@
    }
 
    .mc_wrap {
-   	margin-right: 0;
-   	margin-top: 0;
+   	width: 93%;
+   	margin-left: 3.5%;
    }
 
    .info_items {
@@ -283,6 +285,21 @@
    .content p {
    	padding-bottom: 50px;
    }
+
+   footer .copyright, footer .mnu_item a {
+   	font-size: 16px;
+   }
+}
+
+/* Sub-Extra Small Devices, Phones */
+@media only screen and (max-width : 620px) {
+	header h1 {
+		font-size: 30px;
+	}
+
+	.top_line a {
+		font-size: 15px;
+	}
 }
 
 /* Extra Small Devices, Phones */
