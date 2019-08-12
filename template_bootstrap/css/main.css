@@ -15,6 +15,15 @@
 	opacity: 1;
 }
 
+* {
+	box-sizing: border-box;
+}
+
+html {
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
 	
@@ -28,6 +37,7 @@ body {
 	font-size: 16px;
 	min-width: 320px;
 	position: relative;
+	overflow-x: hidden;
 }
 .hidden {
 	display: none;
